@@ -1,0 +1,11 @@
+schemaVersion: 1.0
+name: Minecraft-Afk-Bot
+components:
+  - name: afk-bot
+    source:
+      type: Dockerfile
+      dockerfile: Dockerfile
+    ingresses:
+      - name: bot-service
+        port: 8000
+        type: REST
